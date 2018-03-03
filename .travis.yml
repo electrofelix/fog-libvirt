@@ -13,17 +13,13 @@ matrix:
   fast_finish: true
   include:
     - rvm: 2.0.0
-      gemfile: Gemfile
     - rvm: 2.1.0
-      gemfile: Gemfile
     - rvm: 2.1.1
-      gemfile: Gemfile
     - rvm: 2.1.1
-      gemfile: gemfiles/Gemfile-edge
+      env: FOG_LIBVIRT_DEPS_GIT=1
     - rvm: 2.2.0
-      gemfile: Gemfile
     - rvm: 2.2.0
-      gemfile: gemfiles/Gemfile-edge
+      env: FOG_LIBVIRT_DEPS_GIT=1
 
 notifications:
   email: false
